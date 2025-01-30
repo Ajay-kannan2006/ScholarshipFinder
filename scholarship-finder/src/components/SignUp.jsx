@@ -23,7 +23,7 @@ const Signup = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        var req = await axios.post('http://localhost:8080/signup', formData, {
+        var req = await axios.post('https://scholarshipfinder.onrender.com/signup', formData, {
             withCredentials: true
         });
         console.log(req);

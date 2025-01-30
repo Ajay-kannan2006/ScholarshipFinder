@@ -10,7 +10,7 @@ const bcrypt = require('bcrypt');
 dotenv.config();
 app.use(express.json());
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://scholarship-finder-xd5f.vercel.app/',
     methods: ['GET', 'POST'],
     credentials: true,
 }));
