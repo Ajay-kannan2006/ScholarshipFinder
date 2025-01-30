@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-import './Signup.css';
+import './SignUp.css';
 import { useNavigate } from 'react-router-dom';
 const Signup = () => {
     const navigate = useNavigate();
