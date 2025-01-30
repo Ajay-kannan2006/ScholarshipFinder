@@ -9,11 +9,7 @@ const cors = require('cors');
 const bcrypt = require('bcrypt');
 dotenv.config();
 app.use(express.json());
-app.use(cors({
-    origin: 'https://scholarship-finder-xd5f.vercel.app/',
-    methods: ['GET', 'POST'],
-    credentials: true,
-}));
+app.use(cors());
 mongoose.connect(process.env.MONGO_URL)
     .then(() => {
         console.log("Connected");
