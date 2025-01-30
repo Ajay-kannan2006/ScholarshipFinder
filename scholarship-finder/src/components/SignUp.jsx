@@ -23,9 +23,7 @@ const Signup = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        var req = await axios.post('https://scholarshipfinder.onrender.com/signup', formData, {
-            withCredentials: true
-        });
+        var req = await axios.post('https://scholarshipfinder.onrender.com/signup', formData);
         console.log(req);
         if (req.data.message) {
             navigate('/scholarships', { state: req.data.data });

@@ -21,9 +21,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("https://scholarshipfinder.onrender.com/login", formData, {
-                withCredentials: true,
-            });
+            const response = await axios.post("https://scholarshipfinder.onrender.com/login", formData);
             console.log(response);
             if (!response.data.message) {
                 alert("User Doesn't Exist ,Try Signing Up");
